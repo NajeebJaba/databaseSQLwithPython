@@ -19,7 +19,7 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Insert data
+
 book1 = Book(title='The great gatsby', author='F.Scott Fitzgad', publication_date='2023-03-03')
 book2 = Book(title='The great gatsby version two', author='F.Scott Fitzgad', publication_date='2024-04-09')
 session.add(book1)
